@@ -24,18 +24,13 @@ public class Delete {
             DeleteResult result = gradesCollection.deleteOne(filter);
             System.out.println(result);
 
-            // findOneAndDelete operation
-            filter = eq("student_id", 10002);
-            Document doc = gradesCollection.findOneAndDelete(filter);
-            System.out.println(doc.toJson(JsonWriterSettings.builder().indent(true).build()));
-
-            // delete many documents
+            //filter = eq("student_id", 10002);
+            //Document doc = gradesCollection.findOneAndDelete(filter);
+            //System.out.println(doc.toJson(JsonWriterSettings.builder().indent(true).build()));
+            
             filter = gte("student_id", 10000);
             result = gradesCollection.deleteMany(filter);
             System.out.println(result);
-
-            // delete the entire collection and its metadata (indexes, chunk metadata, etc).
-            gradesCollection.drop();
         }
     }
 }

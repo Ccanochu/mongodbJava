@@ -10,7 +10,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
             </goals>
             <properties>
-                <exec.vmArgs>-Dmongodb.uri="mongodb+srv://aws:supersafe@cluster0-rirxn.mongodb.net/test?w=majority"</exec.vmArgs>
+                <exec.vmArgs>-Dmongodb.uri="mongodb+srv://ccanochu:ud65oThyYXYD507V@cluster0.ikllzzc.mongodb.net/?retryWrites=true&amp;w=majority"</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.appArgs></exec.appArgs>
                 <exec.mainClass>${packageClassName}</exec.mainClass>
@@ -27,7 +27,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
             </goals>
             <properties>
-                <exec.vmArgs>-Dmongodb.uri="mongodb+srv://aws:supersafe@cluster0-rirxn.mongodb.net/test?w=majority" -agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
+                <exec.vmArgs>-Dmongodb.uri="mongodb+srv://ccanochu:ud65oThyYXYD507V@cluster0.ikllzzc.mongodb.net/?retryWrites=true&amp;w=majority" -agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.appArgs></exec.appArgs>
                 <exec.mainClass>${packageClassName}</exec.mainClass>
@@ -45,7 +45,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
             </goals>
             <properties>
-                <exec.vmArgs>-Dmongodb.uri="mongodb+srv://aws:supersafe@cluster0-rirxn.mongodb.net/test?w=majority"</exec.vmArgs>
+                <exec.vmArgs>-Dmongodb.uri="mongodb+srv://ccanochu:ud65oThyYXYD507V@cluster0.ikllzzc.mongodb.net/?retryWrites=true&amp;w=majority"</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.mainClass>${packageClassName}</exec.mainClass>
                 <exec.executable>java</exec.executable>
